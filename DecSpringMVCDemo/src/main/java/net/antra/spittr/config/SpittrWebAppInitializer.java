@@ -1,6 +1,9 @@
 package net.antra.spittr.config;
 
-import org.springframework.web.servlet.support. AbstractAnnotationConfigDispatcherServletInitializer;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+@Configuration
 public class SpittrWebAppInitializer
         extends AbstractAnnotationConfigDispatcherServletInitializer {
     @Override protected String[] getServletMappings() {
